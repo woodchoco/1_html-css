@@ -3,7 +3,7 @@
 *{
   margin-left: 0;
   margin-right: 0;
-  box-size: border;
+  box-sizing: border-box;
 }
 
 .readable-hidden{
@@ -87,6 +87,11 @@ ul.gnb > li > a {
   padding-top: 100px;
 }
 
+.blog::after{
+  content: ' ';
+  display: block;
+  clear: both;
+}
 .blog article{
   float: left;
   width: 300px;
@@ -110,7 +115,8 @@ ul.gnb > li > a {
 /* footer */
 
 .footer{
-  height: 30px;
-  background-color: #fff;
-  padding-top: 100px;
+  background-color: black;
+  padding: 50px;
+  text-align: center;
+  color: white;
 }
